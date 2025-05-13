@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        <%= title %>
+    </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <h1 class="title">Course Feedback</h1>
+    <form action="/" method="POST">
+
+        <div class="fullName">
+            <label for="name">Enter Full Name</label>
+            <input type="text" id="name" name="fullName" required>
+        </div>
+
+
+        <div class="course-selection">
+            <label for="course">Select Course</label>
+            <select id="course" name="courseName" required>
+                <option value="course1">Course 1</option>
+                <option value="course2">Course 2</option>
+                <option value="course3">Course 3</option>
+                <option value="course4">Course 4</option>
+            </select>
+        </div>
+
+        <p>Rate the selected course</p>
+        <div class="stars">
+
+            <input class="star star-5" id="star-5" type="radio" name="rating" value="5" />
+            <label class="star star-5" for="star-5"></label>
+            <input class="star star-4" id="star-4" type="radio" name="rating" value="4" />
+            <label class="star star-4" for="star-4"></label>
+            <input class="star star-3" id="star-3" type="radio" name="rating" value="3" />
+            <label class="star star-3" for="star-3"></label>
+            <input class="star star-2" id="star-2" type="radio" name="rating" value="2" />
+            <label class="star star-2" for="star-2"></label>
+            <input class="star star-1" id="star-1" type="radio" name="rating" value="1" />
+            <label class="star star-1" for="star-1"></label>
+        </div>
+
+
+        <div>
+            <label for="feedback">Additional Feedback</label>
+            <textarea id="feedback" name="feedback" required></textarea>
+        </div>
+
+        <button>Submit</button>
+    </form>
+</body>
+
+</html>
